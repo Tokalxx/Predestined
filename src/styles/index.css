@@ -1,0 +1,32 @@
+/* Defualt Page Style */
+body {
+  padding: 1rem 5rem;
+  background: radial-gradient(circle, #2760fd, #060608 95%);
+}
+
+section {
+  border: solid white 1px;
+  color: white;
+  min-height: 59vh;
+}
+
+/* Page Specific Styling*/
+.hero_container {
+  display: flex;
+  flex-direction: row;
+  border: solid red 1px;
+  flex-wrap: nowrap;
+  column-gap: 1rem;
+  justify-content: space-between;
+}
+
+.hero_container div {
+  flex: 1;
+}
+
+.hero_title-wrapper {
+  border: solid green 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

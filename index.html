@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>The Gathering</title>
+    <link rel="stylesheet" href="/src/styles/index.css" />
   </head>
   <body>
     <section class="hero_section">
-      <div class="container">
+      <div class="container hero_container">
         <div class="hero_title-wrapper">
           <h1>Hero Title</h1>
           <h2>Sub Text</h2>
@@ -109,44 +110,45 @@
         </div>
       </div>
     </section>
-    <section class="contact_section"></section>
-    <div class="container">
-      <h2>Contact Us</h2>
-      <form action="submit_form.php" method="POST">
-        <!---->
-        <label for="name">Full Name: </label><br />
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="John Doe"
-          required
-        /><br /><br />
+    <section class="contact_section">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="POST">
+          <!---->
+          <label for="name">Full Name: </label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="John Doe"
+            required
+          /><br /><br />
 
-        <!---->
-        <label for="email">Email: </label><br />
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="JohnD@gmail.com"
-          required
-        /><br /><br />
+          <!---->
+          <label for="email">Email: </label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="JohnD@gmail.com"
+            required
+          /><br /><br />
 
-        <!---->
-        <label for="message">Message: </label><br />
-        <textarea
-          id="message"
-          name="message"
-          rows="5"
-          placeholder="Type your Message here..."
-          required
-        ></textarea
-        ><br /><br />
+          <!---->
+          <label for="message">Message: </label><br />
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Type your Message here..."
+            required
+          ></textarea
+          ><br /><br />
 
-        <!---->
-        <button type="submit">Send It</button>
-      </form>
-    </div>
+          <!---->
+          <button type="submit">Send It</button>
+        </form>
+      </div>
+    </section>
   </body>
 </html>
