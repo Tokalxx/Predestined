@@ -1,7 +1,7 @@
 /* Defualt Page Style */
 body {
   padding: 1rem 5rem;
-  background: radial-gradient(circle, #2760fd, #060608 95%);
+  background: linear-gradient(160deg, #141e30 0%, #243b55 100%);
 }
 
 section {
@@ -10,7 +10,33 @@ section {
   min-height: 59vh;
 }
 
+.container {
+  padding: 3rem 1rem;
+}
+
+nav {
+  border: white solid 0.1rem;
+  margin: 0 1rem;
+  display: flex;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav img {
+  max-height: 5rem;
+}
+
 /* Page Specific Styling*/
+/**/
 .hero_container {
   display: flex;
   flex-direction: row;
@@ -28,5 +54,55 @@ section {
   border: solid green 1px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
+}
+
+/*Content Section Styling*/
+.content_section .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.content_wrapper {
+  padding: 1rem;
+  border: 0.1rem solid white;
+}
+
+/*Next Section Styling*/
+.next_section .container {
+  flex-grow: 1;
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.content_wrapper {
+  padding: 1rem;
+  border: 0.1rem solid white;
+  width: 100%;
+}
+
+/*Next Section Styling*/
+.involve_section .container {
+  flex-grow: 1;
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+/*Contact Section Styling*/
+.contact_section .container {
+  flex-grow: 1;
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 1rem;
 }

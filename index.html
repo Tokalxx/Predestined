@@ -5,18 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Gathering</title>
     <link rel="stylesheet" href="/src/styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/css/splide.min.css"
+    />
   </head>
   <body>
+    <nav class="header">
+      <a href="./index.html">
+        <img
+          class="nav_icon"
+          src="https://img.fortawesome.com/1ce05b4b/ad-pro-visuals-cropped.svg"
+        />
+      </a>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./public/team.html">Team</a></li>
+        <li><a href="./public/gallery.html">Gallery</a></li>
+        <li><a href="./public/event.html">Events</a></li>
+      </ul>
+    </nav>
     <section class="hero_section">
       <div class="container hero_container">
         <div class="hero_title-wrapper">
-          <h1>Hero Title</h1>
+          <h1>The Gathering</h1>
           <h2>Sub Text</h2>
+          <img
+            src="C:\Users\seans\Downloads\3043c3b3-fef3-4574-b91e-3cdf14c638c2.png"
+          />
         </div>
         <div class="hero_image-wrapper">
           <img
             alt="hero_image"
-            src="https://static.atlasacademy.io/JP/CharaGraph/303200/303200b@2.png"
+            src="https://thegatheringsa.com/thegatheringsouthafrica/_assets/media/27f98d70baeb3aab7870b2a2319aed03.png"
           />
         </div>
       </div>
@@ -57,10 +78,34 @@
     </section>
     <section class="content_section">
       <div class="container">
-        <div>
+        <div class="content_wrapper">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Sen Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+            ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua.Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua.Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua.Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua.Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua
           </p>
         </div>
         <div>
@@ -73,13 +118,13 @@
     </section>
     <section class="next_section">
       <div class="container">
-        <div>
+        <div class="content_wrapper">
           <h2>Next Gathering</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          <div class="countdown">>>>countdown>>></div>
+          <div class="countdown_wrapper"><p class="countdown">...</p></div>
         </div>
         <div>
           <img
@@ -98,7 +143,7 @@
             src="https://static.atlasacademy.io/JP/CharaGraph/303200/303200b@2.png"
           />
         </div>
-        <div>
+        <div class="content_wrapper">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem
@@ -112,43 +157,65 @@
     </section>
     <section class="contact_section">
       <div class="container">
-        <h2>Contact Us</h2>
-        <form action="submit_form.php" method="POST">
-          <!---->
-          <label for="name">Full Name: </label><br />
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="John Doe"
-            required
-          /><br /><br />
+        <div class="content_wrapper">
+          <h2>Contact Us</h2>
+          <form action="submit_form.php" method="POST">
+            <!---->
+            <label for="name">Full Name: </label><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="John Doe"
+              required
+            /><br /><br />
 
-          <!---->
-          <label for="email">Email: </label><br />
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="JohnD@gmail.com"
-            required
-          /><br /><br />
+            <!---->
+            <label for="email">Email: </label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="JohnD@gmail.com"
+              required
+            /><br /><br />
 
-          <!---->
-          <label for="message">Message: </label><br />
-          <textarea
-            id="message"
-            name="message"
-            rows="5"
-            placeholder="Type your Message here..."
-            required
-          ></textarea
-          ><br /><br />
+            <!---->
+            <label for="message">Message: </label><br />
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Type your Message here..."
+              required
+            ></textarea
+            ><br /><br />
 
-          <!---->
-          <button type="submit">Send It</button>
-        </form>
+            <!---->
+            <button type="submit">Send It</button>
+          </form>
+        </div>
+        <div>
+          <img
+            alt="hero_image"
+            src="https://static.atlasacademy.io/JP/CharaGraph/303200/303200b@2.png"
+          />
+        </div>
       </div>
     </section>
+    <div class="footer">Footer</div>
+
+    <script src="src/pages/Home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/js/splide.min.js"></script>
+    <script>
+      new Splide(".splide", {
+        type: "loop",
+        perPage: 5,
+        gap: "1.5rem",
+        focus: "center",
+        pagination: false,
+        arrows: true,
+      }).mount();
+    </script>
   </body>
 </html>
