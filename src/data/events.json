@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Event 01",
+    "place": "32 Walnut Street",
+    "date": "2025-01-01"
+  },
+  {
+    "name": "Event 02",
+    "place": "33 Walnut Street",
+    "date": "2025-01-13"
+  },
+  {
+    "name": "Event 03",
+    "place": "35 Walnut Street",
+    "date": "2025-01-21"
+  }
+]

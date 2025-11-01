@@ -1,0 +1,17 @@
+[
+  {
+    "name": "John Doe",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "image": "https://static.atlasacademy.io/JP/CharaGraph/9400650/9400650a.png"
+  },
+  {
+    "name": "Jane Doe",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "image": "https://static.atlasacademy.io/JP/CharaGraph/9407370/9407370a.png"
+  },
+  {
+    "name": "John Doe",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "image": "https://static.atlasacademy.io/JP/CharaGraph/9400650/9400650a.png"
+  }
+]
