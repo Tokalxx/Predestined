@@ -1,21 +1,29 @@
-/* Defualt Page Style */
+/* Defualt Page Styling */
 body {
   padding: 1rem 5rem;
-  background: linear-gradient(160deg, #141e30 0%, #243b55 100%);
+  background-color: rgb(48, 48, 48);
+  row-gap: 1rem;
+  color: white;
+  /* background: linear-gradient(160deg, #141e30 0%, #243b55 100%); */
 }
 
 section {
   border: solid white 1px;
   color: white;
   min-height: 59vh;
+  margin-top: 1rem;
 }
 
 .container {
   padding: 3rem 1rem;
 }
 
+/*Navigation Styling*/
 nav {
   border: white solid 0.1rem;
+  border-radius: 1.5rem;
+  padding: 0 3rem;
+  align-items: center;
   margin: 0 1rem;
   display: flex;
 }
@@ -31,8 +39,13 @@ nav ul li {
   margin: 0 1rem;
 }
 
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
 nav img {
-  max-height: 5rem;
+  max-height: 2rem;
 }
 
 /* Page Specific Styling*/
