@@ -159,7 +159,7 @@
       <div class="container">
         <div class="content_wrapper">
           <h2>Contact Us</h2>
-          <form action="submit_form.php" method="POST">
+          <form>
             <!---->
             <label for="name">Full Name: </label><br />
             <input
@@ -204,7 +204,7 @@
       </div>
     </section>
     <footer>
-      <div class="footer">Footer</div>
+      <div class="footer-wrapper"></div>
     </footer>
 
     <script src="src/pages/Home.js"></script>
@@ -218,6 +218,53 @@
         pagination: false,
         arrows: true,
       }).mount();
+    </script>
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/12.7.0/firebase-app.js";
+      import {
+        getDatabase,
+        ref,
+        push,
+      } from "https://www.gstatic.com/firebasejs/12.7.0/firebase-database.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyD5AIf-1BzqoQTVExXM44a2jMK9DRIa6NA",
+        authDomain: "fir-crud-8361f.firebaseapp.com",
+        databaseURL: "https://fir-crud-8361f-default-rtdb.firebaseio.com",
+        projectId: "fir-crud-8361f",
+        storageBucket: "fir-crud-8361f.firebasestorage.app",
+        messagingSenderId: "154785865367",
+        appId: "1:154785865367:web:7387a9eb7dca4d266f53d2",
+      };
+
+      const app = initializeApp(firebaseConfig);
+      const db = getDatabase(app);
+
+      // Handle form submission
+      const form = document.querySelector("form");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+
+        push(ref(db, "contacts"), {
+          name,
+          email,
+          message,
+          createdAt: new Date().toISOString(),
+        })
+          .then(() => {
+            alert("Message sent successfully!");
+            form.reset();
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+            alert("Something went wrong.");
+          });
+      });
     </script>
   </body>
 </html>
